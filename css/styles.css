@@ -1,0 +1,146 @@
+/* ---- Base Element Styles ---- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 100%/1.5 'Work Sans', sans-serif;
+    color: #454945;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ---- Navigation ---- */
+.name {
+    text-align: center;
+    margin: 0;
+}
+
+/* ---- Layout Containers ---- */
+
+
+.container {
+    background-color: #F5F5F5;
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+}
+
+.main-footer {
+    text-align: center;
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+    background: #F5F5F5;
+}
+
+/* ---- Media Queries ---- */
+
+@media screen and (min-width: 320px) {
+    .nav {
+        display: block;
+        width: 90%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        background-color: white;
+        text-align: center;
+    }
+    .profile-image {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        padding: 10px 0;
+    }
+    .images {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        padding: 10px 0;
+    }
+    .content {
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 11em;
+        padding-right: 11em;
+      }
+      .contact {
+        display: block;
+        width: 90%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .button {
+        display: flex;  
+        justify-content: space-between;
+      }
+      .foot {
+           display: none;
+      }
+}
+
+@media screen and (min-width: 769px) {
+    .test {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bio {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .item {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .foot-1 {
+        margin-right: 600px;
+    }
+   .button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .test {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bio {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .item {
+        flex-grow: 1;
+        flex-basis: 400px;
+    }
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .foot-1 {
+        margin-right: 600px;
+    }
+    .button {
+        display: none;
+      }
+}
+
