@@ -5,93 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="wrapper">
+            <header class="main-header">
+                <div class="navigation">
+                <h1 class="name" id="top">Student Name</h1>
+                <ul class="navbar">
+                    <li class="nav-1 nav"><a href="#top">Home</a></li>
+                    <li class="nav-2 nav"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-3 nav"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="profile-image">
+                <p class="img-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            </div>
+            
+            </header>
+            <h2 class="portfolio" id="portfolio">Portfolio</h2>
+        <div class="container">
+            
+            <figure class="flex-item">
+                <img src="images/portfolio-1.png" alt="" class="images">
+             <figcaption class="fig-text">
+                    <h3>Marketing Page</h3>
+                   <p>This project shows the front page of a marketing website mearn for a specific business I'm interested in.</p>
+             </figcaption>
+            </figure>
 
-    <header class="main-header">
-    <div class="container" id="home">
-        <h1 class="name">Student Name</h1>
-        <ul class="test">
-            <li class="nav"><a href="#home">Home</a></li>
-            <li class="nav"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav"><a href="#contact">Contact</a></li>
-          </ul>
-        <div class="bio">
-        <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="profile-image">
-        <p class>Hi! I'm a front-end developer who loves responsive design adn css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-      </div>
+            <figure class="flex-item">
+                <img src="images/portfolio-2.png" alt="" class="images">
+             <figcaption class="fig-text">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+             </figcaption>
+            </figure>
+
+            <figure class="flex-item">
+                <img src="images/portfolio-3.png" alt="" class="images">
+             <figcaption class="fig-text">
+                <h3>Travel App</h3>
+                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+             </figcaption>
+            </figure>
+
+            <figure class="flex-item">
+                <img src="images/portfolio-4.png" alt="" class="images">
+             <figcaption class="fig-text">
+                <h3>Map of Favorite Spots</h3>
+                <p>This project uses mapping apis to plot pints for my favorite spots in the city for a do-it-yourself walking tour.</p>
+             </figcaption>
+            </figure>
+            
+            <figure class="flex-item">
+                <img src="images/portfolio-5.png" alt="" class="images">
+             <figcaption class="fig-text"> 
+                <h3>Photo Gallery</h3>
+                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+             </figcaption>
+            </figure>
+ 
+            <figure class="flex-item">
+                <img src="images/portfolio-6.png" alt="" class="images">
+             <figcaption class="fig-text">
+                <h3>Calculator</h3>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+             </figcaption>
+            </figure>
+        </div>
+
+            <footer class="main-footer">
+                <h3 id="contact">Contact</h3>
+                <p>If you're interested in chatting or want mor information about what I've been working on, I'd love to hear from you!</p>
+                <ul class="contact">
+                    <li class="contact-1 contact">Phone: +1 (111) 555-1234</li>
+                    <li class="contact-2 contact">Email: email@yoursite.com</li>
+                </ul>
+
+                <ul class="foot" style="list-style-type:none">
+                    <li class="foot-1 foot">Student Name</li>
+                    <li class="foot-2 foot"><a href="#top">Home</a></li>
+                    <li class="foot-3 foot"><a href="#portfolio">Portfolio</a></li>
+                    <li class="foot-4 foot"><a href="#contact">Contact</a></li>
+                    </ul>
+                
+                <ul class="foot-mobile" style="list-style-type:none">
+                    <li class="button-1 button">Student name</li>
+                    <li class="button-2 button"><a href="#top">BACK TO TOP</a></li>
+                </ul>
+            </footer>
     </div>
-      </header>
-
-      <!-- Main content for project 2 --> 
-
-    <div>
-        <h2 id="portfolio">Portfolio</h2>
-      <div class="content">
-        <section class="item-1 item">
-            <img src="images/portfolio-1.png" alt="" class="images">
-            <h3>Marketing Page</h3>
-            <p>This project shows the front page of a marketing website mearn for a specific business I'm interested in.</p>
-        </section>
-
-        <section class="item-2 item">
-            <img src="images/portfolio-2.png" alt="" class="images">
-            <h3>Search Page</h3>
-            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </section>
-
-        <section class="item-3 item">
-            <img src="images/portfolio-3.png" alt="" class="images">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </section>
-
-        <section class="item-4 item">
-            <img src="images/portfolio-4.png" alt="" class="images">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project uses mapping apis to plot pints for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </section>
-
-        <section class="item-5 item">
-            <img src="images/portfolio-5.png" alt="" class="images">
-            <h3>Photo Gallery</h3>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </section>
-
-        <section class="item-6 item"> 
-            <img src="images/portfolio-6.png" alt="" class="images">
-            <h3>Calculator</h3>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-        </section>
-     </div>
-    </div>
-
-
-
-<footer class="main-footer">
-    <h3>Contact</h3>
-    <p>If you're interested in chatting or want mor information about what I've been working on, I'd love to hear from you!</p>
-    <ul id="contact">
-        <li class="contact">Phone: +1 (111) 555-1234</li>
-        <li class="contact">Email: email@yoursite.com</li>
-    </ul>
-    <div class="button">
-        <div>Student Name</div>
-        <div class="cap"><a href="#home">BACK TO TOP</a></div>
-    </div>
-    <div>
-        <ul class="foot" style="list-style-type:none">
-            <li class="foot-1">Student Name</li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>  
-    </div>
-</footer>
 </body>
 </html>
