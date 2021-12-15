@@ -1,36 +1,23 @@
 /* ---Base Element Styles--- */ 
 
 * {
-    box-sizing: border-box;
+    font-family: 'Work Sans';
 }
 
 body {
     background-color: #E8E8E8;
 }
 
-.box {
-    display: inline-block;
-    padding: 1em;
-}
-
-.images {
-    width: 100%;
-}
+img {
+    max-width: 95%;
+} 
 
 /* ---Base Layout Styles--- */
 
 h2 {
     text-align: center;
-    background-color: white;
+    background: white;
     margin-bottom: 0;
-}
-
-.profile-image {
-    padding: 2em;
-}
-
-.fig-text {
-    text-align: center;
 }
 
 /* ---Navigation--- */
@@ -44,52 +31,58 @@ a:link {
     text-align: center;
 }
 
-.contact-2 {
-    margin-top: 10px;
-}
-
-.foot {
-    display: inline-block;
-    margin-top: 30px;
-}
 .foot-1 {
     font-weight: bold;
 }
 
-/* ---Layout Containers--- */
+/* ---Flexbox Layout--- */
 
 .container {
-    margin-top: 0;
-    padding-left: 1em;
-    padding-right: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    text-align: center;
     background-color: white;
+    justify-content: space-evenly;
+    padding: 20px 0;
 }
 
-.main-header {
-    padding: 1em 0;
-}
-
-
-/* ---Media Queries--- */
-
-@media (min-width: 320px) and (max-width: 767px) {
+/* ---Mobile Styles--- */
 
     .nav {
         background-color: #f5f5f5;
-        padding: .5em;
-        margin: 0 .3em .3em;
     }
-    .main-header {
+
+    .nav-1 {
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .nav-2 {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .nav-3 {
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
-    .profile-image {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1em;
+    .profile-img {
+        padding: 30px 50px 30px 50px;
+    }
+
+    .img-text {
+        padding: 10px 40px;
+    }
+
+    .main-header {
+        text-align: center;
     }
 
     .foot {
@@ -98,90 +91,113 @@ a:link {
 
     .main-footer {
         text-align: center;
-        padding: 1em 0;
     }
 
-    .button {
-        display: inline-block;
-        margin-top: 50px;
+    #contact {
+        padding-top: 40px;
+    }
+
+    .foot-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         font-weight: bold;
     }
 
-   .button-1 {
-       margin-right: 100px;
-   }
-}
+    .mobile-1 {
+        margin-right: auto;
+    }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+
+/* ---Media Queries--- */
+
+@media (min-width: 768px) {
+
+    h1 {
+        margin-bottom: 0;
+    }
+    
+    .nav {
+        background: none;
+    }
+
     .main-header {
         text-align: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
     
     .profile-image {
         width: 60%;
-        float: right;
     }
 
     .img-text {
         text-align: left;
-        margin-top: 30px;
+        padding: 20px;
+        flex: 1;
     }
+
+    .item {
+        width: 40%;
+    }
+
     .nav {
         display: inline-block;
-        margin: 10px;
+    }
+
+    .contactp {
+        padding: 0 150px;
+    }
+    
+    .foot {
+        display: flex;
+        justify-content: space-evenly; 
+        margin-top: 10px;
     }
 
     .foot-mobile {
         display: none;
     }
-    .container .flex-item {
-      width: 35%;
-  }
-
-  .foot {
-    margin-left: 10px;
-  }
-
-  .foot-1 {
-    margin-right: 450px;
-  }
-
-}
 
 @media (min-width: 1024px) {
+
     .navigation {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
-    .navbar li {
-        margin-top: 30px;
-        display: inline-block;
+        
+    .profile-image {
+        width: 45%;
     }
-
-    .nav-2 {
-        margin: 20px 20px;
-    }
-
-   .profile-image {
-    width: 45%;
-    float: right;
- }
 
     .img-text {
         text-align: left;
         margin-top: 30px;
+        padding: 10px 45px;
     }
+
+    .item {
+        width: 30%;
+
+    }
+    
     .foot-mobile {
         display: none;
     }
-    .container .flex-item {
-        width: 25%;
+
+    .contactp {
+        padding: 0 250px;
     }
+
     .foot {
         margin-left: 10px;
     }
-    
+
     .foot-1 {
         margin-right: 450px;
     }
-  }
+ }
+}

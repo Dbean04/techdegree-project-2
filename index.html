@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,93 +13,80 @@
 </head>
 
 <body>
-    <div class="wrapper">
-            <header class="main-header">
-                <div class="navigation">
+    <div>
+        <header class="main-header">
+            <div class="navigation">
                 <h1 class="name" id="top">Student Name</h1>
-                <ul class="navbar">
-                    <li class="nav-1 nav"><a href="#top">Home</a></li>
-                    <li class="nav-2 nav"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-3 nav"><a href="#contact">Contact</a></li>
-                </ul>
+                    <h4 class="nav-1 nav"><a href="#top">Home</a></h4>
+                    <h4 class="nav-2 nav"><a href="#portfolio">Portfolio</a></h4>
+                    <h4 class="nav-3 nav"><a href="#contact">Contact</a></h4>
             </div>
-            <div class="box">
-                <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="profile-image">
+        </header>
+
+            <div class="bio">
+                <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="profile-img">
                 <p class="img-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
             </div>
             
-            </header>
             <h2 class="portfolio" id="portfolio">Portfolio</h2>
-        <div class="container">
-            
-            <figure class="flex-item">
-                <img src="images/portfolio-1.png" alt="" class="images">
-             <figcaption class="fig-text">
+            <div class="container"> 
+                        
+                <div class="item-1 item">
+                    <img src="images/portfolio-1.png" alt="marketing">
                     <h3>Marketing Page</h3>
-                   <p>This project shows the front page of a marketing website mearn for a specific business I'm interested in.</p>
-             </figcaption>
-            </figure>
-
-            <figure class="flex-item">
-                <img src="images/portfolio-2.png" alt="" class="images">
-             <figcaption class="fig-text">
+                    <p>This project shows the front page of a marketing website mearn for a specific business I'm interested in.</p>
+                </div>
+                
+                <div class="item-2 item">
+                    <img src="images/portfolio-2.png" alt="search">
                     <h3>Search Page</h3>
                     <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-             </figcaption>
-            </figure>
-
-            <figure class="flex-item">
-                <img src="images/portfolio-3.png" alt="" class="images">
-             <figcaption class="fig-text">
-                <h3>Travel App</h3>
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-             </figcaption>
-            </figure>
-
-            <figure class="flex-item">
-                <img src="images/portfolio-4.png" alt="" class="images">
-             <figcaption class="fig-text">
-                <h3>Map of Favorite Spots</h3>
-                <p>This project uses mapping apis to plot pints for my favorite spots in the city for a do-it-yourself walking tour.</p>
-             </figcaption>
-            </figure>
+                </div>
             
-            <figure class="flex-item">
-                <img src="images/portfolio-5.png" alt="" class="images">
-             <figcaption class="fig-text"> 
-                <h3>Photo Gallery</h3>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-             </figcaption>
-            </figure>
- 
-            <figure class="flex-item">
-                <img src="images/portfolio-6.png" alt="" class="images">
-             <figcaption class="fig-text">
-                <h3>Calculator</h3>
-                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-             </figcaption>
-            </figure>
-        </div>
+                <div class="item-3 item">
+                    <img src="images/portfolio-3.png" alt="travel">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </div>
+                
+                <div class="item-4 item">
+                    <img src="images/portfolio-4.png" alt="map">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping apis to plot pints for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </div>
+        
+                <div class="item-5 item">
+                    <img src="images/portfolio-5.png" alt="gallery"> 
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </div>
+    
+                <div class="item-6 item">
+                    <img src="images/portfolio-6.png" alt="calculator">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </div>
+            </div>
 
             <footer class="main-footer">
                 <h3 id="contact">Contact</h3>
-                <p>If you're interested in chatting or want mor information about what I've been working on, I'd love to hear from you!</p>
-                <ul class="contact">
-                    <li class="contact-1 contact">Phone: +1 (111) 555-1234</li>
-                    <li class="contact-2 contact">Email: email@yoursite.com</li>
-                </ul>
+                <p class="contactp">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <div>
+                    <p class="contact-1 contact">Phone: +1 (111) 555-1234</p>
+                    <p class="contact-2 contact">Email: email@yoursite.com</p>
+                </div>
 
-                <ul class="foot" style="list-style-type:none">
-                    <li class="foot-1 foot">Student Name</li>
-                    <li class="foot-2 foot"><a href="#top">Home</a></li>
-                    <li class="foot-3 foot"><a href="#portfolio">Portfolio</a></li>
-                    <li class="foot-4 foot"><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="foot">
+                    <div class="foot-1 foot">Student Name</div>
+                    <div class="foot-2 foot"><a href="#top">HOME</a></div>
+                    <div class="foot-3 foot"><a href="#portfolio">PORTFOLIO</a></div>
+                    <div class="foot-4 foot"><a href="#contact">CONTACT</a></div>
+                </div>
                 
-                <ul class="foot-mobile" style="list-style-type:none">
-                    <li class="button-1 button">Student name</li>
-                    <li class="button-2 button"><a href="#top">BACK TO TOP</a></li>
-                </ul>
+                <div class="foot-mobile">
+                    <div class="mobile-1 mobile">Student name</div>
+                    <div class="mobile-2 mobile"><a href="#top">BACK TO TOP</a></div>
+                </div>
             </footer>
     </div>
 </body>
